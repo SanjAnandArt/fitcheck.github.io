@@ -1,5 +1,8 @@
-h1 {
+body {
   background-color: #f5cfbd;
+}
+
+h1 {
   color: #ff9090; 
   font-size: 150px;
   text-align: center;
