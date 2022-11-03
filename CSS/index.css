@@ -1,10 +1,10 @@
 body {
-  background-color: #353B6D;
+  background-color: #faf0e6;
 }
 
 h1 {
-  color: #C5CAE9; 
+  color: #343434; 
   font-size: 150px;
-  font-family: Apple Chancery, cursive;
+  font-family: 'Playfair Display', serif;
   text-align: center;
 }
