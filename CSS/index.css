@@ -8,3 +8,16 @@ h1 {
   font-family: 'Playfair Display', serif;
   text-align: center;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-containter > div {
+  text-align: center;
+  font-size: 30px;
+  background-color: #DCCCCC;
+}
