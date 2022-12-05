@@ -39,3 +39,7 @@ h1 {
   text-align: center;
   padding: 1px 15px;
 }
+
+.measurements > button {
+  text-align: center;
+}
