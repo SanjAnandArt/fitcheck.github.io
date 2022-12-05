@@ -12,6 +12,7 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: 100px 300px
   gap: 20px;
   padding: 20px;
 }
