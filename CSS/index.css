@@ -12,8 +12,8 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 100px 300px
-  background-color: #D00000
+  grid-template-rows: 100px 300px;
+  background-color: #D00000;
 }
 
 .container {
