@@ -12,11 +12,12 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 200px 300px;
+  gap: 20px;
 }
 
 .container {
   background-color: #ffffff;
   text-align: center;
   font-size: 80px;
+  padding: 30px 0;
 }
