@@ -30,8 +30,8 @@
       <br>
       <label for="bust">Bust:</label>
       <input type="text" name="bust">
-      <div class="popup" onclick="myFunction()">?
-        <span class="popuptext" id="myPopup">Measure the fullest part of your chest.</span>
+      <div class="popup" onclick="popUp()">?
+        <span class="popuptext" id="?">Measure the fullest part of your chest.</span>
       </div>
       <br>
       <label for="waist">Waist:</label>
@@ -48,8 +48,8 @@
 </body>
 
 <script>
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
+  function popUp() {
+    var popup = document.getElementById("?");
     popup.classList.toggle("show");
   }
 </script>
