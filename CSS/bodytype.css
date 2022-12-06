@@ -41,5 +41,6 @@ h1 {
 }
 
 .home {
-  margin: auto;
+  margin: 0 auto;
+  display: block;
 }
