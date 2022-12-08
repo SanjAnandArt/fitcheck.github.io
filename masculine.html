@@ -27,18 +27,27 @@
       <br>
       <label for="shoulder">Shoulder:</label>
       <input type="text" name="shoulder">
+      <div class="popup" onclick="popUpShoulder()">?
+        <span class="popuptext" id="shoulder?">Measure from the tip of one shoulder to the other.</span>
+      </div>
       <br>
       <label for="bust">Bust:</label>
       <input type="text" name="bust">
-      <div class="popup" onclick="myFunction()">?
-        <span class="popuptext" id="myPopup">Measure the fullest part of your chest.</span>
+      <div class="popup" onclick="popUpBust()">?
+        <span class="popuptext" id="bust?">Measure around the fullest part of your chest.</span>
       </div>
       <br>
       <label for="waist">Waist:</label>
       <input type="text" name="waist">
+      <div class="popup" onclick="popUpWaist()">?
+        <span class="popuptext" id="waist?">Measure around the smallest part of your waist.</span>
+      </div>
       <br>
       <label for="hip">Hip:</label>
       <input type="text" name="hip">
+      <div class="popup" onclick="popUpHip()">?
+        <span class="popuptext" id="hip?">Measure around the widest part of your hip.</span>
+      </div>
       <br>
       <br>
       <button type="button" name="brandsandboutiques" class="button" onClick="window.location.href = 'https://sanjanandart.github.io/fitcheck.github.io/brandsandboutiques.html';">Brands and Boutiques</button>
@@ -46,3 +55,22 @@
     </div>
   </div>
 </body>
+
+<script>
+  function popUpShoulder() {
+    var popup = document.getElementById("shoulder?");
+    popup.classList.toggle("show");
+  }
+  function popUpBust() {
+    var popup = document.getElementById("bust?");
+    popup.classList.toggle("show");
+  }
+  function popUpWaist() {
+    var popup = document.getElementById("waist?");
+    popup.classList.toggle("show");
+  }
+  function popUpHip() {
+    var popup = document.getElementById("hip?");
+    popup.classList.toggle("show");
+  }
+</script>
