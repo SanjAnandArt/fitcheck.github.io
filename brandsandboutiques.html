@@ -7,4 +7,29 @@
 <body>
   <h1 class="title">Brands & Boutiques</h1>
   <button type="button" name="home" class="button home" onClick="window.location.href = 'https://sanjanandart.github.io/fitcheck.github.io/';">Home</button>
+  <div class="grid-container">
+    <div class="container">
+      <button type="button" class="collapsible">Open Collapsible</button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div>
+    </div>
+  </div>
 </body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
