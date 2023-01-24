@@ -14,12 +14,6 @@
         <p>Outfits coming soon...</p>
       </div>
     </div>
-    <div class="container">
-      <button type="button" class="ltcollapsible">Lord & Taylor</button>
-      <div class="content">
-        <p>Outfits coming soon...</p>
-      </div>
-    </div>
   </div>
 </body>
 
@@ -28,20 +22,6 @@
   var i;
 
   for (i = 0; i < macyCollapsable.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-  
-  var ltCollapsable = document.getElementsByClassName("ltcollapsible");
-
-  for (i = 0; i < ltCollapsable.length; i++) {
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
