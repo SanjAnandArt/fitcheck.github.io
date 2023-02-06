@@ -24,17 +24,17 @@
 </body>
 
 <script>
-  var CollapsableMacys = document.getElementsByClassName("collapsible");
+  var Collapsable = document.getElementsByClassName("collapsible");
   var i;
 
-  for (i = 0; i < CollapsableMacys.length; i++) {
-    CollapsableMacys[i].addEventListener("click", function() {
+  for (i = 0; i < Collapsable.length; i++) {
+    Collapsable[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
       } else {
-        content.style.display = "block";
+        content.style.maxHeight = content.scrollHeight + "px";
       }
     });
   }
