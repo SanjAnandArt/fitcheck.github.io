@@ -15,37 +15,26 @@
         <button type="button" name="kg" class="button">kg</button>
         <br>
         <br>
-        <label for="weight">Weight:</label>
-        <input type="text" name="weight">
+        <p>Weight: <input type="text" name="weight"></p>
         <br>
         <br>
         <button type="button" name="in" class="button">in</button>
         <button type="button" name="cm" class="button">cm</button>
         <br>
         <br>
-        <label for="height">Height:</label>
-        <input type="text" name="height">
+        <p>Height: <input type="text" name="height"></p>
         <br>
-        <label for="shoulder">Shoulder:</label>
-        <input type="text" name="shoulder">
-        <div class="popup" onclick="popUpShoulder()">?
-          <span class="popuptext" id="shoulder?">Measure from the tip of one shoulder to the other.</span>
-        </div>
-        <br>
-        <label for="bust">Bust:</label>
-        <input type="text" name="bust">
+        <p>Bust: <input type="text" name="bust"></p>
         <div class="popup" onclick="popUpBust()">?
           <span class="popuptext" id="bust?">Measure around the fullest part of your chest.</span>
         </div>
         <br>
-        <label for="waist">Waist:</label>
-        <input type="text" name="waist">
+        <p>Waist: <input type="text" name="waist"></p>
         <div class="popup" onclick="popUpWaist()">?
           <span class="popuptext" id="waist?">Measure around the smallest part of your waist.</span>
         </div>
         <br>
-        <label for="hip">Hip:</label>
-        <input type="text" name="hip">
+        <p>Hip: <input type="text" name="hip"></p>
         <div class="popup" onclick="popUpHip()">?
           <span class="popuptext" id="hip?">Measure around the widest part of your hip.</span>
         </div>
@@ -60,10 +49,6 @@
 </body>
 
 <script>
-  function popUpShoulder() {
-    var popup = document.getElementById("shoulder?");
-    popup.classList.toggle("show");
-  }
   function popUpBust() {
     var popup = document.getElementById("bust?");
     popup.classList.toggle("show");
