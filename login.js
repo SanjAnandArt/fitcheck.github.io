@@ -26,7 +26,7 @@ function getAccessToken() {
     code = code.replace("?code=", '');
     console.log('Got the code', code);
 
-    fetch(`https://sanjanandart.github.io/fitcheck.github.io/index2.html/${clientId}/${code}`)
+    fetch(`https://sanjanandart.github.io/fitcheck.github.io/${clientId}/${code}`)
     .then(data => data.json())
     .then(data => getProfile(data.access_token))
     .catch(err => console.error(err));
