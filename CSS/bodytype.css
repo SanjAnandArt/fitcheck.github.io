@@ -9,6 +9,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  display: inline-block;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
